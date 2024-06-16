@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Toggle | component</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main class="main">
+      <div class="decor">
+        <img src="images/bg-top.svg" alt="" class="decoration1" />
+        <img src="images/bg-bottom.svg" alt="" class="decoration2" />
+      </div>
+      <div class="container">
+        <h1 class="title">Our Price</h1>
+
+        <div class="toggle-block">
+          <p class="status">Annualy</p>
+          <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" id="check" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <p class="status">Monthly</p>
+        </div>
+        <div class="card_wrapper">
+          <div class="card">
+            <h2 class="card_name">Basic</h2>
+            <div class="card_price">
+              &dollar; <span class="price">19.99</span>
+            </div>
+            <p class="advantage">500 GB Storage</p>
+            <p class="advantage">2 Users Allowed</p>
+            <p class="advantage">Send up to 3 GB</p>
+            <input type="button" value="Learn More" class="card_button" />
+          </div>
+          <div class="card active">
+            <h2 class="card_name">Professional</h2>
+            <div class="card_price">
+              &dollar; <span class="price">24.99</span>
+            </div>
+            <p class="advantage">1 TB Storage</p>
+            <p class="advantage">5 Users Allowed</p>
+            <p class="advantage">Send up to 10 GB</p>
+            <input
+              type="button"
+              value="Learn More"
+              class="card_button card_button_active"
+            />
+          </div>
+          <div class="card">
+            <h2 class="card_name">Master</h2>
+            <div class="card_price">
+              &dollar; <span class="price">39.99</span>
+            </div>
+            <p class="advantage">2 TB Storage</p>
+            <p class="advantage">10 Users Allowed</p>
+            <p class="advantage">Send up to 20 GB</p>
+            <input type="button" value="Learn More" class="card_button" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
